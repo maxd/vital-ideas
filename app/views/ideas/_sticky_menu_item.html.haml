@@ -1,0 +1,4 @@
+- if @idea.sticky
+  = link_to_remote t(".unsticky_idea"), :url => unsticky_idea_path(@idea), :update => "sticky-menu-item"
+- else
+  = link_to_remote t(".sticky_idea"), :url => sticky_idea_path(@idea), :update => "sticky-menu-item"

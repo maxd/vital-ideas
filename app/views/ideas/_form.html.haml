@@ -1,0 +1,21 @@
+- semantic_form_for @idea do |form|
+  - form.inputs do
+    = form.input :title, :input_html => { :autocomplete => "off" }
+    = form.input :target, :input_html => { :rows => 4 }
+    = form.input :description, :input_html => { :class => "mceEditor" }
+    = form.input :state, :as => :select, :include_blank => false
+    = form.input :tag_list
+  - form.buttons :class => "buttons" do
+    = form.commit_button
+    %li.cancel
+      = t("or")
+      = link_to t("cancel"), ideas_path
+
+:javascript
+  jQuery(function(){
+    $('#idea_tag_list').autocomplete({
+      minChars: 1,
+      delimiter: /,\s*/,
+      lookup: [ #{ @tags.collect {|tag| "'#{escape_javascript(tag)}'" }.join(", ") } ]
+    });
+  });

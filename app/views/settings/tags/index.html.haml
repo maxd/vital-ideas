@@ -1,0 +1,7 @@
+%h1= t(".title")
+
+= tag_table
+.pagination
+  = will_paginate(@tags, :container => false)
+  &nbsp;&nbsp;
+  = page_entries_info(@tags)

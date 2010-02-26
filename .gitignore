@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+log/*.*
+tmp/**/*
+db/*.sqlite3
+coverage/
+db/schema.rb
+public/javascripts/tiny_mce
+public/stylesheets/application.css
+config/database.yml
+rerun.txt

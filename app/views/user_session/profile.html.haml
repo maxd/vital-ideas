@@ -1,0 +1,32 @@
+- content_for :style do
+  div.user-profile { width: 600px; margin: 0 auto; position: relative; }
+  h1.user-name { float: left; }
+  a.edit-profile-link { float: left; padding-left: 1em }
+
+.user-profile
+
+  .clearfix
+    %h1.user-name= "#{@user.last_name}, #{@user.first_name}"
+    = link_to t(".edit"), edit_profile_path, :class => "edit-profile-link clear"
+
+  %ul
+    %li
+      = t("activerecord.attributes.user.email") + ":"
+      = @user.email 
+    %li
+      = t("activerecord.attributes.user.created_at") + ":"
+      = l(@user.created_at.localtime, :format => "%e %B %Y")
+    -if @user.last_login_at.present?
+      %li
+        &nbsp;
+      %li
+        %h5= t(".connection_information")
+      %li
+        = t("activerecord.attributes.user.last_login_at") + ":"
+        = l(@user.last_login_at.localtime, :format => "%e %B %Y %H:%M")
+      %li
+        = t("activerecord.attributes.user.last_login_ip") + ":"
+        = @user.last_login_ip
+      %li
+        = t("activerecord.attributes.user.current_login_ip") + ":"
+        = @user.current_login_ip

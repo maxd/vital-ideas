@@ -1,0 +1,8 @@
+%h1= t(".title")
+
+= ideas_table
+
+.pagination
+  = will_paginate(@ideas, :container => false)
+  &nbsp;&nbsp;
+  = page_entries_info(@ideas)

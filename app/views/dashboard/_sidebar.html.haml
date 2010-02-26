@@ -1,0 +1,8 @@
+.sidebar-block
+  %h6= t("sidebar.actions")
+  .app-sidebar-navigation= render_navigation :context => :dashboard
+
+.sidebar-block
+  %h6= t(".tags")
+  .app-content
+    = render :partial => "tags"                

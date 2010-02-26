@@ -1,0 +1,21 @@
+- content_for :style do
+  div.login-form { width: 400px; margin: 0 auto; }
+  div.login-form .header { position: relative; }
+  div.login-form .header a { position: absolute; top: 0px; right: 10px; }
+
+.login-form
+  .header
+    %h1= t(".title")
+    - if ENABLE_REQUEST_RESET_PASSWORD
+      = link_to t(".reset_password"), request_reset_password_path
+
+  - semantic_form_for @user_session, :url => login_path, :html => {:class => "small-form"} do |form|
+    - form.inputs do
+      = form.input :login
+      = form.input :password, :as => :password
+      = form.input :remember_me, :as => :boolean, :label_html => { :style => "width: 300px; margin-left: 100px; text-align:left" }, :required => false
+    - form.buttons do
+      = form.commit_button t(".login")
+      %li.cancel
+        = t("or")
+        = link_to t("cancel"), dashboard_path

@@ -1,0 +1,224 @@
+ru:
+  application_title: "Решето идей"
+  cancel: "Отменить"
+  or: "или"
+  access_denied: "Доступ запрещён."
+  access_denied_try_to_login: "Доступ запрещён. Залогинтесь в приложение и повторите попытку."
+  title_of_reset_password_email: "Инструкции для востановлении пароля"
+  "true": "Да"
+  "false": "Нет"
+  record_not_found: "Запрощенный объект не найден."
+
+  layouts:
+    main_navigation:
+      dashboard: "Главная"
+      ideas: "Идеи"
+
+    user_navigation:
+      login: "Вход"
+      logout: "Выход"
+      register: "Регистрация"
+      profile: "Профайл"
+      administration: "Управлене приложением"
+      settings: "Настройки"
+
+    admin:
+      main_navigation:
+        dashboard: "Главная"
+        users: "Аккаунты"
+
+  sidebar:
+    actions: "Действия"
+    information: "Информация"
+
+    idea_actions: "Дополнительные действия"
+
+  user_session:
+    login:
+      title: "Вход"
+      login: "Войти"
+      reset_password: "Забыли пароль?"
+
+      success_login: "Вы успешно вошли в приложение!"
+
+    logout:
+      success_logout: "Вы успешно вышли из приложения!"
+
+    register:
+      title: "Регистрация нового аккаунта"
+      register: "Зарегистрировать"
+
+      account_registred: "Аккаунт зарегистрирован!"
+
+    request_reset_password:
+      title: "Восстановление пароля"
+      description: "Заполните форму находящуюся ниже и следуйте инструкциям отправленным по e-mail для восстановления пароля:"
+      email: "E-Mail"
+      send_request: "Отправить запрос"
+
+      email_notification: "Инструкции для восстановления пароля были отправлены на ваш e-mail."
+      nonexistent_email: "Не найдено пользователя с указанным e-mail адресом"
+
+    reset_password:
+      title: "Смена пароля"
+      reset: "Применить новый пароль"
+
+      password_updated: "Пароль востановлен"
+
+    load_user_using_perishable_token:
+      wrong_perishable_token: "Информация для востановления пароля устарела. Попробуйте повторить процедуру востановление пароля."
+
+    profile:
+      edit: "Изменить"
+      connection_information: "Информация о соединении"
+
+    edit_profile:
+      title: "Изменение профайла"
+      change: "Изменить"
+
+  admin:
+    users:
+      index:
+        title: "Аккаунты"
+        login: "Логин"
+        name: "ФИО"
+        email: "E-Mail"
+        created_at: "Создан"
+        last_login_at: "Последний логин"
+        last_login_ip: "IP последнего логина"
+
+        confirm_for_delete: "Вы действительно хотите удалить пользователя с логином '{{login}}'?"
+        edit_hint: "Изменить"
+        delete_hint: "Удалить"
+
+      new:
+        title: "Новый аккаунт"
+
+      edit:
+        title: "Изменить аккаунт"
+
+      sidebar:
+        new: "Новый аккаунт..."
+
+  activerecord:
+    attributes:
+      user:
+        login: "Логин"
+        email: "E-Mail"
+        first_name: "Имя"
+        last_name: "Фамилия"
+        password: "Пароль"
+        password_confirmation: "Повторить пароль"
+        created_at: "Создан"
+        last_login_at: "Последний логин"
+        last_login_ip: "IP последнего логина"
+        current_login_ip: "Текущий IP"
+
+      idea:
+        title: "Название"
+        public: "Опубликована"
+        created_at: "Создан"
+        updated_at: "Изменён"
+
+      tag:
+        name: "Тэг"
+
+  authlogic:
+    attributes:
+      user_session:
+        login: "Логин"
+        email: "E-Mail"
+        password: "Пароль"
+        remember_me: "Запомнить"
+
+  formtastic:
+    actions:
+      user:
+        create: "Создать аккаунт"
+        update: "Изменить аккаунт"
+
+  dashboard:
+    sidebar:
+      new_idea: "Новая идея..."
+      tags: "Тэги"
+
+    welcome:
+      title: "Опубликованные идеи"
+      no_ideas: "Нет опубликованных идей"
+
+    show_public_idea:
+      back: "&laquo; Назад"
+
+    sticked_ideas:
+      title: "Прикреплённые идеи"
+      no_ideas: "У вас нет прикреплённых идей"
+
+    published_ideas:
+      title: "Опубликованные идеи"
+      no_ideas: "У вас нет опубликованных идей"
+
+    last_ideas:
+      title: "Последние идеи"
+      no_ideas: "У вас нет идей"
+
+    last_changed_ideas:
+      title: "Последние изменённые идеи"
+      no_ideas: "У вас нет идей"
+
+  ideas:
+    sidebar:
+      new_idea: "Новая идея..."
+      edit_idea: "Изменить идею..."
+      delete_idea: "Удалить идею..."
+
+    publish_menu_item:
+      publish_idea: "Опубликовать идею"
+      unpublish_idea: "Отменить публикацию идеи"
+
+    sticky_menu_item:
+      sticky_idea: "Прикрепить идею"
+      unsticky_idea: "Открепить идею"
+
+    index:
+      title: "Идеи"
+      actions: ""
+      no_ideas: "У вас нет идей"
+
+      confirm_for_delete: "Вы действительно хотите удалить идею '{{title}}'?"
+      edit_hint: "Изменить"
+      delete_hint: "Удалить"
+
+      sticked: "Прикреплена"
+
+    new:
+      title: "Новая идея"
+
+    edit:
+      title: "Изменить идею"
+
+    tag:
+      title: "Идеи с тэгом '{{tag}}'"
+      actions: ""
+
+  settings:
+    tags:
+      index:
+        no_tags: "У вас нет тэгов"
+        title: "Тэги"
+        actions: ""
+
+        confirm_for_delete: "Вы действительно хотите удалить тэг '{{name}}'?"
+        edit_hint: "Изменить"
+        delete_hint: "Удалить"
+
+      edit:
+        title: "Изменить тэг"
+
+  state:
+    just_an_idea: "Просто идея"
+    detailed_idea: "Детализированная идея"
+    prototype: "Прототип"
+    completed_product: "Законченный продукт"
+    empty_idea: "Пустая идея"
+    hard_for_realization: "Сложна для реализации"
+    abortive_idea: "Нежизнеспособная идея"

@@ -1,0 +1,226 @@
+en:
+  application_title: "Sieve of Ideas"
+  cancel: "Cancel"
+  or: "or"
+  access_denied: "Access denied."
+  access_denied_try_to_login: "Access denied. Try to log in first."
+  title_of_reset_password_email: "Password Reset Instructions"
+  "true": "Yes"
+  "false": "No"
+  record_not_found: "Requested entity not found."
+
+  layouts:
+    main_navigation:
+      dashboard: "Dashboard"
+      ideas: "Ideas"
+
+    user_navigation:
+      login: "Login"
+      logout: "Logout"
+      register: "Register"
+      profile: "Profile"
+      administration: "Administration"
+      settings: "Settings"
+
+    admin:
+      main_navigation:
+        dashboard: "Dashboard"
+        users: "Accounts"
+
+  sidebar:
+    actions: "Actions"
+    information: "Information"
+
+    idea_actions: "Additional Actions"
+
+  user_session:
+    login:
+      title: "Login"
+      login: "Login"
+      reset_password: "Reset password"
+
+      success_login: "Login successful!"
+
+    logout:
+      success_logout: "Logout successful!"
+
+    register:
+      title: "Register"
+      register: "Register"
+
+      account_registred: "Account registered!"
+
+    request_reset_password:
+      title: "Reset Password"
+      description: "Fill out the form below and instructions to reset your password will be emailed to you:"
+      email: "E-Mail"
+      send_request: "Send request"
+
+      email_notification: "Instructions to reset your password have been emailed to you. Please check your email."
+      nonexistent_email: "No user was found with that email address"
+
+    reset_password:
+      title: "Change password"
+      reset: "Reset Password"
+
+      password_updated: "Password successfully updated"
+
+    load_user_using_perishable_token:
+      wrong_perishable_token: "We're sorry, but we could not locate your account. If you are having issues try
+                               copying and pasting the URL from your email into your browser or restarting the
+                               reset password process."
+
+    profile:
+      edit: "edit"
+      connection_information: "Connection information"
+
+    edit_profile:
+      title: "Change Profile"
+      change: "Change"
+
+  admin:
+    users:
+      index:
+        title: "Accounts"
+        login: "Login"
+        name: "Name"
+        email: "E-Mail"
+        created_at: "Created At"
+        last_login_at: "Last Login At"
+        last_login_ip: "Last Login IP"
+
+        confirm_for_delete: "Do you want to delete user with login '{{login}}'?"
+        edit_hint: "Edit"
+        delete_hint: "Delete"
+
+      new:
+        title: "New Account"
+
+      edit:
+        title: "Update Account"
+
+      sidebar:
+        new: "New Account..."
+
+  activerecord:
+    attributes:
+      user:
+        login: "Login"
+        email: "E-Mail"
+        first_name: "First Name"
+        last_name: "Last Name"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        created_at: "Created At"
+        last_login_at: "Last Login At"
+        last_login_ip: "Last Login IP"
+        current_login_ip: "Current IP"
+
+      idea:
+        title: "Title"
+        public: "Public"
+        created_at: "Created At"
+        updated_at: "Changed At"
+
+      tag:
+        name: "Tag"
+
+  authlogic:
+    attributes:
+      user_session:
+        login: "Login"
+        email: "E-Mail"
+        password: "Password"
+        remember_me: "Remember me"
+
+  formtastic:
+    actions:
+      user:
+        create: "Create Account"
+        update: "Update Account"
+
+  dashboard:
+    sidebar:
+      new_idea: "New Idea..."
+      tags: "Tags"
+
+    welcome:
+      title: "Public Ideas"
+      no_ideas: "Public ideas not found"
+
+    show_public_idea:
+      back: "&laquo; Back"
+
+    sticked_ideas:
+      title: "Sticked Ideas"
+      no_ideas: "You don't have sticked ideas"
+
+    published_ideas:
+      title: "Published Ideas"
+      no_ideas: "You don't have published ideas"
+
+    last_ideas:
+      title: "Last Ideas"
+      no_ideas: "You don't have ideas"
+
+    last_changed_ideas:
+      title: "Last Changed Ideas"
+      no_ideas: "You don't have ideas"
+
+  ideas:
+    sidebar:
+      new_idea: "New Idea..."
+      edit_idea: "Edit Idea..."
+      delete_idea: "Delete Idea..."
+
+    publish_menu_item:
+      publish_idea: "Publish Idea"
+      unpublish_idea: "Unpublish Idea"
+
+    sticky_menu_item:
+      sticky_idea: "Sticky Idea"
+      unsticky_idea: "Unsticky Idea"
+
+    index:
+      title: "Ideas"
+      actions: ""
+      no_ideas: "You don't have ideas"
+
+      confirm_for_delete: "Do you want to delete idea with title '{{title}}'?"
+      edit_hint: "Edit"
+      delete_hint: "Delete"
+
+      sticked: "Sticked"
+
+    new:
+      title: "New Idea"
+
+    edit:
+      title: "Change Idea"
+
+    tag:
+      title: "Ideas with tag '{{tag}}'"
+      actions: ""
+
+  settings:
+    tags:
+      index:
+        no_tags: "You don't have tags"
+        title: "Tags"
+        actions: ""
+
+        confirm_for_delete: "Do you want to delete tag with name '{{name}}'?"
+        edit_hint: "Edit"
+        delete_hint: "Delete"
+
+      edit:
+        title: "Change Tag"
+
+  state:
+    just_an_idea: "Just an idea"
+    detailed_idea: "Detailed idea"
+    prototype: "Prototype"
+    completed_product: "Completed product"
+    empty_idea: "Empty idea"
+    hard_for_realization: "Hard to relaization"
+    abortive_idea: "Abortive idea"

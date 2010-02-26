@@ -1,0 +1,18 @@
+.sidebar-block
+  %h6= t("sidebar.actions")
+  .app-sidebar-navigation= render_navigation :context => :ideas
+
+- if @idea and not @idea.new_record?
+  .sidebar-block
+    %h6= t("sidebar.idea_actions")
+    .app-sidebar-navigation
+      %ul
+        %li#publish-menu-item
+          = render :partial => "publish_menu_item"
+        %li#sticky-menu-item
+          = render :partial => "sticky_menu_item"
+
+.sidebar-block
+  %h6= t("sidebar.information")
+  .app-content
+    %p New information text for sidebar context                

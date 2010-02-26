@@ -1,0 +1,14 @@
+.app-block
+  %h1= @idea.title
+
+  %p= @idea.target
+
+  %p
+    State:
+    %strong= @idea.state.title
+
+  - if @idea.description.present?
+    %hr
+    = @idea.description
+  
+= link_to t(".back"), :back

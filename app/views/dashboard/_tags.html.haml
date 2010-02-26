@@ -1,0 +1,9 @@
+.tag-statistics
+  %ul
+    - @tags.each do |tag|
+      %li
+        = link_to tag.name, tagged_ideas_path(tag.name)
+        %div.right
+          %span.tag-count= "(#{tag.count})"
+          .tag-color-bullet(style="color: #{tag.foreground_color}; background-color: #{tag.background_color}")
+      

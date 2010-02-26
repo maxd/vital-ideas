@@ -1,0 +1,4 @@
+- if @idea.public
+  = link_to_remote t(".unpublish_idea"), :url => unpublish_idea_path(@idea), :update => "publish-menu-item"
+- else
+  = link_to_remote t(".publish_idea"), :url => publish_idea_path(@idea), :update => "publish-menu-item"

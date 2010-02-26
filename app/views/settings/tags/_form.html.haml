@@ -1,0 +1,25 @@
+- semantic_form_for [:settings, @tag] do |form|
+  - form.inputs do
+    = form.input :name, :input_html => { :autocomplete => "off" }
+    %li
+      = form.label :color
+      = tag_color_picker(form)
+  - form.buttons :class => "buttons" do
+    = form.commit_button
+    %li.cancel
+      = t("or")
+      = link_to t("cancel"), settings_tags_path
+
+:javascript
+  jQuery(function(){
+    $(".tag-color").click(function() {
+      var foreground_color = $(this).css("color");
+      var background_color = $(this).css("background-color");
+
+        $("#tag_foreground_color").val(rgb2hex(foreground_color));
+        $("#tag_background_color").val(rgb2hex(background_color));
+
+        $(".active-tag-color").removeClass("active-tag-color");
+        $(this).addClass("active-tag-color");
+    });
+  });

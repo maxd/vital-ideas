@@ -1,0 +1,56 @@
+span.tag
+  display: inline-block
+  padding: 0 4px
+  margin-right: 3px
+  border-right: 1px solid #d4d5d6
+  border-bottom: 1px solid #d4d5d6
+
+  a
+    color: inherit
+
+.header-and-tags-line
+  h1, h2, h3, h4, h5, h6
+    display: inline
+
+  span.tags-line
+    vertical-align: top
+
+/* Tag color picker */
+
+.tag-color-picker
+  .tag-color
+    height: 20px
+    width: 20px
+    vertical-align: middle
+    text-align: center
+    border: 2px solid transparent
+    margin: 1px
+    cursor: pointer
+    float: left
+
+    &.active-tag-color
+      border: 2px solid black
+
+/* Tag statistics */
+
+.tag-statistics
+  ul
+    margin: 7px 0
+    
+    li
+      padding: 0 4px
+
+      &:hover
+        background-color: #FBFBFB
+
+      .right
+        float: right
+
+        .tag-count
+          opacity: .5
+
+        .tag-color-bullet
+          display: inline-block
+          height: 1em
+          width: 1em
+          margin-bottom: -2px
