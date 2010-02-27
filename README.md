@@ -14,7 +14,7 @@ Early Alpha
 Screenshots
 -----------
 
-![Welcome page](http://cloud.github.com/downloads/maxd/sieve-of-ideas/Sieve_of_Ideas_-_Welcome.png)
+![Welcome page](http://github.com/downloads/maxd/sieve-of-ideas/Sieve_of_Ideas_-_Welcome.png)
 
 ![Dashboard page](http://github.com/downloads/maxd/sieve-of-ideas/Sieve_of_Ideas_-_Dashboard.png)
 
