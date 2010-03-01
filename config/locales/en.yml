@@ -172,6 +172,7 @@ en:
       new_idea: "New Idea..."
       edit_idea: "Edit Idea..."
       delete_idea: "Delete Idea..."
+      new_feature: "New Feature..."
 
     publish_menu_item:
       publish_idea: "Publish Idea"
@@ -202,6 +203,16 @@ en:
       title: "Ideas with tag '{{tag}}'"
       actions: ""
 
+  features:
+    sidebar:
+      new_feature: "New Feature..."
+
+    new:
+      title: "New Feature"
+
+    edit:
+      title: "Change Feature"
+
   settings:
     tags:
       index:
@@ -215,6 +226,12 @@ en:
 
       edit:
         title: "Change Tag"
+
+  shared:
+    feature_list:
+      title: "Features"    
+      collapse_all: "Collapse All"    
+      expand_all: "Expand All"
 
   state:
     just_an_idea: "Just an idea"

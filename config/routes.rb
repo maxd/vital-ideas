@@ -48,7 +48,9 @@ ActionController::Routing::Routes.draw do |map|
   map.welcome "/welcome", :controller => "dashboard", :action => "welcome"
   map.show_public_idea "/public-idea/:id", :controller => "dashboard", :action => "show_public_idea" 
 
-  map.resources :ideas
+  map.resources :ideas do |idea|
+    idea.resources :features, :except => [ :index, :show ]
+  end
   map.publish_idea "/ideas/publish/:id", :controller => "ideas", :action => "publish", :publish => true
   map.unpublish_idea "/ideas/unpublish/:id", :controller => "ideas", :action => "publish", :publish => false
   map.sticky_idea "/ideas/sticky/:id", :controller => "ideas", :action => "sticky", :sticky => true
@@ -57,7 +59,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.settings "/settings", :controller => "settings/tags", :action => "index"
   map.namespace :settings do |settings|
-    settings.resources :tags
+    settings.resources :tags, :except => [ :show, :new, :create ]
   end
 
   # Administration panel routes

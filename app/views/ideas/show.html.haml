@@ -2,12 +2,15 @@
   %h1= @idea.title
   = render_tags @idea.tags, true
 
-%p= @idea.target
-
 %p
   State:
   %strong= @idea.state.title
 
+%p= @idea.target
+
 - if @idea.description.present?
   %hr
   = @idea.description
+
+-if @features.present?
+  = render :partial => "shared/feature_list"

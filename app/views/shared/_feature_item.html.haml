@@ -1,0 +1,11 @@
+.feature-item
+  %div.feature-indicator(style="background-color: #{ priority_to_color(item.weight) }" title="Weight: #{item.weight}")
+  %div.feature
+    .feature-title.collapsed.clearfix
+      %h5= item.title
+      .feature-menu
+        = link_to "[Edit]", edit_idea_feature_path(@idea, item)
+        = link_to "[Delete]", idea_feature_path(@idea, item), :method => :delete, :confirm => "Yes?"
+    - if item.description.present?
+      .feature-description
+        = item.description

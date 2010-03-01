@@ -18,6 +18,7 @@ class IdeasController < ApplicationController
   end
 
   def show
+    @features = @idea.features
   end
 
   def new

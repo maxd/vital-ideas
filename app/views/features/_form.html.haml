@@ -1,0 +1,11 @@
+- semantic_form_for [@idea, @feature] do |form|
+  - form.inputs do
+    = form.input :title, :input_html => { :autocomplete => "off" }
+    = form.input :description, :input_html => { :class => "mceEditor" }
+    = form.input :weight, :input_html => { :autocomplete => "off" }
+
+  - form.buttons :class => "buttons" do
+    = form.commit_button
+    %li.cancel
+      = t("or")
+      = link_to t("cancel"), idea_path(@idea)

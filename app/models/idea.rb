@@ -6,6 +6,7 @@ class Idea < ActiveRecord::Base
 
   attr_protected :user, :user_id
 
+  has_many :features, :order => "weight DESC"
   belongs_to :user
   belongs_to :state
 

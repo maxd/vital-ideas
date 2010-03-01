@@ -1,0 +1,56 @@
+.feature-list-header
+
+  h2
+    border-bottom: 1px solid gray
+
+  span
+    float: right
+
+
+.feature-item
+  overflow: hidden
+  margin-bottom: 1em
+
+  & > div
+    float: left
+    padding-bottom: 32767px
+    margin-bottom: -32767px
+
+  .feature-indicator
+    width: 14px
+
+  .feature
+    margin-left: 21px
+    width: 100%
+
+    .feature-title
+      margin-right: 21px
+      padding-left: 14px
+      cursor: pointer
+
+      h5
+        float: left
+        margin-bottom: 0
+
+      .feature-menu
+        float: left
+        display: none
+        font-size: 0.8em
+        line-height: 1em
+
+      &:hover .feature-menu
+        display: block
+
+    .feature-description
+      margin-right: 21px
+      margin-top: 0.8em
+      display: none
+
+      & > :last-child
+        margin-bottom: 0
+
+.collapsed
+  background: url(images/collapsed.png) 4px center no-repeat
+
+.expanded
+  background: url(images/expanded.png) 2px center no-repeat
