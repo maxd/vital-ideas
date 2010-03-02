@@ -16,7 +16,7 @@
         %li
           %div
             = link_to(item.title, show_public_idea_path(item), :title => item.title)
-            = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y") + ")"
+            = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y").lstrip + ")"
           %p= item.target
 
     .pagination
