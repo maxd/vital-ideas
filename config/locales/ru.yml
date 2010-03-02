@@ -19,7 +19,7 @@ ru:
       logout: "Выход"
       register: "Регистрация"
       profile: "Профайл"
-      administration: "Управлене приложением"
+      administration: "Управление приложением"
       settings: "Настройки"
 
     admin:
@@ -116,9 +116,18 @@ ru:
 
       idea:
         title: "Название"
+        target: "Цель"
+        description: "Описание"
+        state: "Состояние"
+        tag_list: "Тэги"
         public: "Опубликована"
         created_at: "Создан"
         updated_at: "Изменён"
+
+      feature:
+        title: "Название"
+        description: "Описание"
+        weight: "Вес"
 
       tag:
         name: "Тэг"
@@ -136,6 +145,17 @@ ru:
       user:
         create: "Создать аккаунт"
         update: "Изменить аккаунт"
+
+      idea:
+        create: "Создать идею"
+        update: "Изменить идею"
+
+      feature:
+        create: "Создать фичу"
+        update: "Изменить фичу"
+
+      tag:
+        update: "Изменить тэг"
 
   dashboard:
     sidebar:
@@ -170,6 +190,7 @@ ru:
       new_idea: "Новая идея..."
       edit_idea: "Изменить идею..."
       delete_idea: "Удалить идею..."
+      new_feature: "Новая фича..."
 
     publish_menu_item:
       publish_idea: "Опубликовать идею"
@@ -200,6 +221,16 @@ ru:
       title: "Идеи с тэгом '{{tag}}'"
       actions: ""
 
+  features:
+    sidebar:
+      new_feature: "Новая фича..."
+
+    new:
+      title: "Новая фича"
+
+    edit:
+      title: "Изменить фичу"
+
   settings:
     tags:
       index:
@@ -213,6 +244,17 @@ ru:
 
       edit:
         title: "Изменить тэг"
+
+  shared:
+    feature_list:
+      title: "Фичи"
+      collapse_all: "Сверуть всё"
+      expand_all: "Развернуть всё"
+
+    feature_item:
+      edit_feature: "Изменить"
+      delete_feature: "Удалить"
+      confirm_for_delete: "Вы действительно хотите удалить фичу '{{title}}'?"
 
   state:
     just_an_idea: "Просто идея"

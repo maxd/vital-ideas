@@ -3,7 +3,7 @@
   = render_tags @idea.tags, true
 
 %p
-  State:
+  = t("activerecord.attributes.idea.state") + ":"
   %strong= @idea.state.title
 
 %p= @idea.target

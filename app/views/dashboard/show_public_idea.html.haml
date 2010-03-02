@@ -1,11 +1,11 @@
 .app-block
   %h1= @idea.title
 
-  %p= @idea.target
-
   %p
-    State:
+    = t("activerecord.attributes.idea.state") + ":"
     %strong= @idea.state.title
+
+  %p= @idea.target
 
   - if @idea.description.present?
     %hr

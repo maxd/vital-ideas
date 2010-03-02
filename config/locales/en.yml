@@ -118,9 +118,18 @@ en:
 
       idea:
         title: "Title"
+        target: "Target"
+        description: "Description"
+        state: "State"
+        tag_list: "Tags"
         public: "Public"
         created_at: "Created At"
         updated_at: "Changed At"
+
+      feature:
+        title: "Title"
+        description: "Description"
+        weight: "Weight"
 
       tag:
         name: "Tag"
@@ -138,6 +147,17 @@ en:
       user:
         create: "Create Account"
         update: "Update Account"
+
+      idea:
+        create: "Create Idea"
+        update: "Change Idea"
+
+      feature:
+        create: "Create Feature"
+        update: "Change Feature"
+
+      tag:
+        update: "Change Tag"
 
   dashboard:
     sidebar:
@@ -229,9 +249,14 @@ en:
 
   shared:
     feature_list:
-      title: "Features"    
-      collapse_all: "Collapse All"    
+      title: "Features"
+      collapse_all: "Collapse All"
       expand_all: "Expand All"
+
+    feature_item:
+      edit_feature: "Change"
+      delete_feature: "Delete"
+      confirm_for_delete: "Do you want to delete feature with name '{{title}}'?"
 
   state:
     just_an_idea: "Just an idea"
