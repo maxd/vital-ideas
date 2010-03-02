@@ -3,9 +3,10 @@
   %div.feature
     .feature-title.collapsed.clearfix
       %h5= item.title
-      .feature-menu
-        = link_to "[Edit]", edit_idea_feature_path(@idea, item)
-        = link_to "[Delete]", idea_feature_path(@idea, item), :method => :delete, :confirm => "Yes?"
+      - if show_menu
+        .feature-menu
+          = link_to "[Edit]", edit_idea_feature_path(@idea, item)
+          = link_to "[Delete]", idea_feature_path(@idea, item), :method => :delete, :confirm => "Yes?"
     - if item.description.present?
       .feature-description
         = item.description

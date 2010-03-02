@@ -3,7 +3,7 @@
     = link_to t(".expand_all"), "#", :class => "expand-collaps-all-features"
   %h2= t(".title")
 
-= render :partial => "shared/feature_item", :collection => @features, :as => :item
+= render :partial => "shared/feature_item", :collection => @features, :as => :item, :locals => { :show_menu => show_menu }
 
 :javascript
   jQuery(function() {

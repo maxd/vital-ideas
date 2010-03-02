@@ -13,4 +13,4 @@
   = @idea.description
 
 -if @features.present?
-  = render :partial => "shared/feature_list"
+  = render :partial => "shared/feature_list", :locals => { :show_menu => true }

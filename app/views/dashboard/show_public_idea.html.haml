@@ -10,5 +10,8 @@
   - if @idea.description.present?
     %hr
     = @idea.description
+
+  -if @features.present?
+    = render :partial => "shared/feature_list", :locals => { :show_menu => false }
   
 = link_to t(".back"), :back

@@ -30,6 +30,7 @@ class DashboardController < ApplicationController
 
   def show_public_idea
     @idea = Idea.published.find(params[:id])
+    @features = @idea.features
   rescue ActiveRecord::RecordNotFound
     flash[:warning] = t("access_denied")
     redirect_to root_url
