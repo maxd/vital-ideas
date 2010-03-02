@@ -1,10 +1,10 @@
 class CreateFeatures < ActiveRecord::Migration
   def self.up
     create_table :features do |t|
-      t.integer :idea_id
-      t.string  :title
+      t.integer :idea_id, :null => false
+      t.string  :title, :null => false
       t.text    :description
-      t.integer :weight
+      t.integer :weight, :default => 0
 
       t.timestamps
     end
