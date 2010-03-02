@@ -46,7 +46,8 @@ ActionController::Routing::Routes.draw do |map|
   map.reset_password "/reset_password/:id", :controller => "user_session", :action => "reset_password"
 
   map.welcome "/welcome", :controller => "dashboard", :action => "welcome"
-  map.show_public_idea "/public-idea/:id", :controller => "dashboard", :action => "show_public_idea" 
+  map.user_dashboard "/dashboard", :controller => "dashboard", :action => "dashboard"  
+  map.show_public_idea "/public-idea/:id", :controller => "dashboard", :action => "show_public_idea"
 
   map.resources :ideas do |idea|
     idea.resources :features, :except => [ :index, :show ]
