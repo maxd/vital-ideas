@@ -9,3 +9,6 @@ public/javascripts/tiny_mce
 public/stylesheets/application.css
 config/database.yml
 rerun.txt
+bin
+config/deploy.rb
+Capfile
