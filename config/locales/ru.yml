@@ -134,6 +134,23 @@ ru:
       tag:
         name: "Тэг"
 
+    errors:
+      models:
+        feature:
+          attributes:
+            title:
+              blank: "{{attribute}} не может быть пустым"
+            weight:
+              blank: "{{attribute}} не может быть пустым"
+              inclusion: "{{attribute}} должен находиться в диапазоне -1000..1000"
+        idea:
+          attributes:
+            title:
+              blank: "{{attribute}} не может быть пустым"
+            target:
+              blank: "{{attribute}} не может быть пустым"
+              too_long: "Описание {{attribute}} должно быть меньше {{count}} символов"
+
   authlogic:
     attributes:
       user_session:

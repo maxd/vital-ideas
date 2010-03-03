@@ -134,6 +134,23 @@ en:
       tag:
         name: "Tag"
 
+    errors:
+      models:
+        feature:
+          attributes:
+            title:
+              blank: "{{attribute}} of feature can't be empty"
+            weight:
+              blank: "{{attribute}} of feature can't be empty"
+              inclusion: "{{attribute}} value should be in range -1000..1000"  
+        idea:
+          attributes:
+            title:
+              blank: "{{attribute}} of idea can't be empty"
+            target:
+              blank: "{{attribute}} of idea can't be empty"
+              too_long: "Length of {{attribute}} should be less than {{count}} chars"
+
   authlogic:
     attributes:
       user_session:
