@@ -1,6 +1,6 @@
 class Feature < ActiveRecord::Base
 
-  belongs_to :idea
+  belongs_to :idea, :touch => true
 
   validates_presence_of :title
   validates_presence_of :weight
