@@ -7,29 +7,22 @@
 
 :javascript
   jQuery(function() {
-    $(".feature-title").click(function(e) {
-      // Return if it's a child that's clicked:
-      if (e.target !== this && e.target != $("h5", this).get(0))
-        return;
-
-      $(this).toggleClass("collapsed");
-      $(this).toggleClass("expanded");
-      $(this).next(".feature-description").slideToggle(300);
+    $(".feature-title h5").click(function(e) {
+      $(this).toggleClass("collapsed").toggleClass("expanded");
+      $(this).parent().next(".feature-description").slideToggle(300);
     });
 
     $(".expand-collaps-all-features").toggle(function() {
-      $(".feature-title.collapsed").each(function() {
-        $(this).removeClass("collapsed");
-        $(this).addClass("expanded");
-        $(this).next(".feature-description").show();
+      $(".feature-title h5.collapsed").each(function() {
+        $(this).removeClass("collapsed").addClass("expanded");
+        $(this).parent().next(".feature-description").show();
       });
       $(this).text("#{ t(".collapse_all") }");
     },
     function() {
-      $(".feature-title.expanded").each(function() {
-        $(this).removeClass("expanded");
-        $(this).addClass("collapsed");
-        $(this).next(".feature-description").hide();
+      $(".feature-title h5.expanded").each(function() {
+        $(this).removeClass("expanded").addClass("collapsed");
+        $(this).parent().next(".feature-description").hide();
       });
       $(this).text("#{ t(".expand_all") }");
     });

@@ -1,8 +1,8 @@
 .feature-item
   %div.feature-indicator(style="background-color: #{ priority_to_color(item.weight) }" title="Weight: #{item.weight}")
   %div.feature
-    .feature-title.collapsed.clearfix
-      %h5= item.title
+    .feature-title.clearfix
+      %h5.collapsed= item.title
       - if show_menu
         .feature-menu
           = link_to t(".edit_feature"), edit_idea_feature_path(@idea, item)
