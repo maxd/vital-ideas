@@ -182,8 +182,9 @@ en:
       tags: "Tags"
 
     welcome:
-      title: "Public Ideas"
+      public_ideas_title: "Public Ideas"
       no_ideas: "Public ideas not found"
+      welcome_text:
 
     show_public_idea:
       back: "&laquo; Back"
@@ -210,6 +211,7 @@ en:
       edit_idea: "Edit Idea..."
       delete_idea: "Delete Idea..."
       new_feature: "New Feature..."
+      helpful_information:
 
     publish_menu_item:
       publish_idea: "Publish Idea"
@@ -243,6 +245,7 @@ en:
   features:
     sidebar:
       new_feature: "New Feature..."
+      helpful_information:
 
     new:
       title: "New Feature"

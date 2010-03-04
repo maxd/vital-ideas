@@ -1,25 +1,21 @@
-.welcome-block
-  %h1 Welcome to Sieve of Ideas
-  %p
-    This is application for store, growing and analyzing YOUR IDEAS! 
+.welcome-container
+  .welcome-block
+    = t(".welcome_text")
 
-  %p
-    %strong Register and login to works with application.
+  .public-ideas-block
+    .app-block
+      %h5
+        = image_tag("public.png")
+        = t(".public_ideas_title")
+      %ul
+        - @published_ideas.each do |item|
+          %li
+            %div
+              = link_to(item.title, show_public_idea_path(item), :title => item.title)
+              = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y").lstrip + ")"
+            %p= item.target
 
-.public-ideas-block
-  .app-block
-    %h5
-      = image_tag("public.png")
-      = t(".title")
-    %ul
-      - @published_ideas.each do |item|
-        %li
-          %div
-            = link_to(item.title, show_public_idea_path(item), :title => item.title)
-            = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y").lstrip + ")"
-          %p= item.target
-
-    .pagination
-      = will_paginate(@published_ideas, :container => false)
-      &nbsp;&nbsp;
-      = page_entries_info(@published_ideas)
+      .pagination
+        = will_paginate(@published_ideas, :container => false)
+        &nbsp;&nbsp;
+        = page_entries_info(@published_ideas)
