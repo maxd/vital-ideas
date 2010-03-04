@@ -39,10 +39,7 @@ en:
       login: "Login"
       reset_password: "Reset password"
 
-      success_login: "Login successful!"
-
     logout:
-      success_logout: "Logout successful!"
 
     register:
       title: "Register"

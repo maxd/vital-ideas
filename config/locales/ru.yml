@@ -39,10 +39,7 @@ ru:
       login: "Войти"
       reset_password: "Забыли пароль?"
 
-      success_login: "Вы успешно вошли в приложение!"
-
     logout:
-      success_logout: "Вы успешно вышли из приложения!"
 
     register:
       title: "Регистрация нового аккаунта"
