@@ -33,7 +33,6 @@ module IdeasHelper
 
     parts = []
     parts << link_to(image_tag("edit.png"), edit_url, :title => t(".edit_hint"))
-    parts << "&nbsp;"
     parts << link_to(image_tag("delete.png"), delete_url, :method => "delete",
                      :title => t(".delete_hint"),
                      :confirm => t(".confirm_for_delete", :title => item.title))
