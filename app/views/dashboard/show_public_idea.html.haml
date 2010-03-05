@@ -8,8 +8,7 @@
   %p= @idea.target
 
   - if @idea.description.present?
-    %hr
-    = @idea.description
+    .idea-description.rich-description= @idea.description
 
   -if @features.present?
     = render :partial => "shared/feature_list", :locals => { :show_menu => false }
