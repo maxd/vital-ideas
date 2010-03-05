@@ -1,6 +1,13 @@
 .dashboard-block
-  .dashboard-block-body
+  .app-block
     %h5
       = image_tag("idea.png")
       = t(".title")
-    = last_ideas_table
+    %ul.square-list
+      - @last_ideas.each do |item|
+        %li
+          %div
+            = link_to(item.title, idea_path(item), :title => item.title)
+            = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y").lstrip + ")"
+          %p.target
+            %em= item.target
