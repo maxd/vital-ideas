@@ -76,6 +76,10 @@ en:
       change: "Change"
 
   admin:
+    admin_dashboard:
+      index: 
+        title: "Dashboard"
+
     users:
       index:
         title: "Accounts"
