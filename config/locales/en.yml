@@ -192,19 +192,14 @@ en:
 
     sticked_ideas:
       title: "Sticked Ideas"
-      no_ideas: "You don't have sticked ideas"
-
-    published_ideas:
-      title: "Published Ideas"
-      no_ideas: "You don't have published ideas"
+      no_ideas: "No sticked ideas"
 
     last_ideas:
       title: "Last Ideas"
-      no_ideas: "You don't have ideas"
+      no_ideas: "No ideas"
 
-    last_changed_ideas:
-      title: "Last Changed Ideas"
-      no_ideas: "You don't have ideas"
+    tags:
+      no_tags: "No tags"
 
   ideas:
     sidebar:
@@ -225,7 +220,7 @@ en:
     index:
       title: "Ideas"
       actions: ""
-      no_ideas: "You don't have ideas"
+      no_ideas: "No ideas"
 
       confirm_for_delete: "Do you want to delete idea with title '{{title}}'?"
       edit_hint: "Edit"
@@ -257,7 +252,7 @@ en:
   settings:
     tags:
       index:
-        no_tags: "You don't have tags"
+        no_tags: "No tags"
         title: "Tags"
         actions: ""
 

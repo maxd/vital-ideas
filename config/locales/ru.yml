@@ -200,19 +200,14 @@ ru:
 
     sticked_ideas:
       title: "Прикреплённые идеи"
-      no_ideas: "У вас нет прикреплённых идей"
-
-    published_ideas:
-      title: "Опубликованные идеи"
-      no_ideas: "У вас нет опубликованных идей"
+      no_ideas: "Нет прикреплённых идей"
 
     last_ideas:
       title: "Последние идеи"
-      no_ideas: "У вас нет идей"
+      no_ideas: "Нет идей"
 
-    last_changed_ideas:
-      title: "Последние изменённые идеи"
-      no_ideas: "У вас нет идей"
+    tags:
+      no_tags: "Нет тегов"
 
   ideas:
     sidebar:
@@ -250,7 +245,7 @@ ru:
     index:
       title: "Идеи"
       actions: ""
-      no_ideas: "У вас нет идей"
+      no_ideas: "Нет идей"
 
       confirm_for_delete: "Вы действительно хотите удалить идею '{{title}}'?"
       edit_hint: "Изменить"
@@ -305,7 +300,7 @@ ru:
   settings:
     tags:
       index:
-        no_tags: "У вас нет тэгов"
+        no_tags: "Нет тэгов"
         title: "Тэги"
         actions: ""
 
