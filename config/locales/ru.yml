@@ -196,6 +196,7 @@ ru:
         </p>
 
     show_public_idea:
+      author: "Автор"
       back: "&laquo; Назад"
 
     sticked_ideas:

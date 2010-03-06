@@ -188,6 +188,7 @@ en:
       welcome_text: "&nbsp;"
 
     show_public_idea:
+      author: "Author"
       back: "&laquo; Back"
 
     sticked_ideas:
