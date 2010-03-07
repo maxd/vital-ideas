@@ -1,7 +1,7 @@
 - semantic_form_for @idea do |form|
   - form.inputs do
     = form.input :title, :input_html => { :autocomplete => "off" }
-    = form.input :target, :input_html => { :rows => 4 }
+    = form.input :intention, :input_html => { :rows => 4 }
     = form.input :description, :input_html => { :class => "mceEditor" }
     = form.input :state, :as => :select, :include_blank => false
     = form.input :tag_list

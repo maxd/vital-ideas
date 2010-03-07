@@ -6,7 +6,7 @@
   = t("activerecord.attributes.idea.state") + ":"
   %strong= @idea.state.title
 
-%p.idea-target= @idea.target
+%p.idea-intention= @idea.intention
 
 - if @idea.description.present?
   .idea-description.rich-description= @idea.description

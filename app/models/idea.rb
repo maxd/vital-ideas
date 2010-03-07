@@ -11,10 +11,10 @@ class Idea < ActiveRecord::Base
   belongs_to :state
 
   validates_presence_of :title
-  validates_presence_of :target
+  validates_presence_of :intention
   validates_presence_of :state
 
-  validates_length_of :target, :maximum => 1024
+  validates_length_of :intention, :maximum => 1024
 
   named_scope :published, :conditions => { :public => true }
 

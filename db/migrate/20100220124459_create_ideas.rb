@@ -4,7 +4,7 @@ class CreateIdeas < ActiveRecord::Migration
       t.integer :id
       t.integer :user_id, :null => false
       t.string :title, :null => false
-      t.text :target, :null => false
+      t.text :intention, :null => false
       t.text :description
       t.integer :state_id, :null => false
       t.boolean :public, :default => false

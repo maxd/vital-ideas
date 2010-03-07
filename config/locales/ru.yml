@@ -119,7 +119,7 @@ ru:
 
       idea:
         title: "Название"
-        target: "Намеренье"
+        intention: "Намеренье"
         description: "Описание"
         state: "Состояние"
         tag_list: "Тэги"
@@ -148,7 +148,7 @@ ru:
           attributes:
             title:
               blank: "{{attribute}} не может быть пустым"
-            target:
+            intention:
               blank: "{{attribute}} не может быть пустым"
               too_long: "Описание {{attribute}} должно быть меньше {{count}} символов"
 

@@ -10,7 +10,7 @@
             %div
               = link_to(item.title, idea_path(item), :title => item.title)
               = "(" + I18n.l(item.updated_at.localtime, :format => "%e %B %Y").lstrip + ")"
-            %p.target
-              %em= item.target
+            %p.intention
+              %em= item.intention
     - else
       %div= t(".no_ideas")

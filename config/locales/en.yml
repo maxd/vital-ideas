@@ -119,7 +119,7 @@ en:
 
       idea:
         title: "Title"
-        target: "Target"
+        intention: "Intention"
         description: "Description"
         state: "State"
         tag_list: "Tags"
@@ -148,7 +148,7 @@ en:
           attributes:
             title:
               blank: "{{attribute}} of idea can't be empty"
-            target:
+            intention:
               blank: "{{attribute}} of idea can't be empty"
               too_long: "Length of {{attribute}} should be less than {{count}} chars"
 
