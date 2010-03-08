@@ -32,7 +32,7 @@ class IdeasController < ApplicationController
     @idea.user = current_user
     if @idea.save
       current_user.tag(@idea, :with => tags, :on => :tags)
-      redirect_to ideas_path
+      redirect_to idea_path(@idea)
     else
       @idea.tag_list = tags
       render :action => "new"
@@ -48,7 +48,7 @@ class IdeasController < ApplicationController
 
     if @idea.update_attributes(params[:idea])
       current_user.tag(@idea, :with => tags, :on => :tags)
-      redirect_to ideas_path
+      redirect_to idea_path(@idea)
     else
       @idea.tag_list = tags
       render :action => "edit"
