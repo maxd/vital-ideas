@@ -28,10 +28,6 @@ class Idea < ActiveRecord::Base
       all(:limit => 5, :order => "created_at DESC")
     end
 
-    def last_changed_ideas
-      all(:limit => 5, :order => "updated_at DESC")
-    end
-
   end
 
   def self.published_ideas(limit = 5)

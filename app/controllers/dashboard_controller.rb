@@ -22,9 +22,7 @@ class DashboardController < ApplicationController
 
   def dashboard
     @sticked_ideas = Idea.for_user(current_user).sticked_ideas
-    @published_ideas = Idea.for_user(current_user).published_ideas
     @last_ideas = Idea.for_user(current_user).last_ideas
-    @last_changed_ideas = Idea.for_user(current_user).last_changed_ideas
     @tags = Idea.tag_counts_on(:tags, :conditions => "taggings.tagger_type = '#{User.class_name}' AND taggings.tagger_id = '#{current_user.id}'", :order => "count DESC")
   end
 
