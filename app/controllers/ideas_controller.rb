@@ -62,7 +62,7 @@ class IdeasController < ApplicationController
   end
 
   def publish
-    @idea.public = params[:publish]
+    @idea.change_publication_status(params[:publish])    
     @idea.save
 
     render :partial => "publish_menu_item", :layout => false

@@ -10,6 +10,7 @@ class CreateIdeas < ActiveRecord::Migration
       t.boolean :public, :default => false
       t.boolean :sticky, :default => false
 
+      t.datetime :published_at
       t.timestamps
     end
 

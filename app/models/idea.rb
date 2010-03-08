@@ -35,7 +35,12 @@ class Idea < ActiveRecord::Base
   end
 
   def self.published_ideas(limit = 5)
-    all(:limit => limit, :conditions => { :public => true }, :order => "updated_at DESC")
+    published.all(:limit => limit, :order => "published_at DESC")
+  end
+
+  def change_publication_status(val)
+    self.published_at = Time.now if !public_was and val
+    self.public = val
   end
 
   def to_param
