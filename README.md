@@ -1,10 +1,9 @@
-Sieve of Ideas
-==============
-
 Introduction
 ------------
 
-The "Sieve of Ideas" is application for store, growing and analyzing YOUR IDEAS!
+The "Vital Ideas" is application for store, growing and analyzing your ideas!
+
+For more details see [Wiki pages](http://wiki.github.com/maxd/ext-rails-template/)
 
 Status
 ------
@@ -14,4 +13,14 @@ Early Alpha
 Screenshots
 -----------
 
-[Link to slideshow](http://picasaweb.google.ru/closer.main/SieveOfIdeas#slideshow)
+[Link to slideshow](http://picasaweb.google.ru/closer.main/VitalIdeas#slideshow)
+
+Additional Information
+----------------------
+
+Application base on [ext-rails-template](http://github.com/maxd/ext-rails-template) template.
+
+Authors
+-------
+
+The vital-ideas were created by [Maxim Dobriakov](http://maksd.info) aka closer.
