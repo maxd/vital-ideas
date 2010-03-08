@@ -1,11 +1,11 @@
 module ApplicationHelper
 
   def render_tag(tag, link = false)
-    content_tag :span, tag.name, :class => "tag", :style => "color: #{tag.foreground_color}; background-color: #{tag.background_color}" do
+    content_tag :span, h(tag.name), :class => "tag", :style => "color: #{tag.foreground_color}; background-color: #{tag.background_color}" do
       if link
-        link_to tag.name, tagged_ideas_path(tag.name)
+        link_to h(tag.name), tagged_ideas_path(tag.name)
       else
-        tag.name
+        h(tag.name)
       end
     end
   end

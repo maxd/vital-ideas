@@ -11,10 +11,10 @@
         - @published_ideas.each do |item|
           %li
             %div
-              = link_to(item.title, show_public_idea_path(item), :title => item.title)
+              = link_to h(item.title), show_public_idea_path(item), :title => h(item.title)
               = "(" + I18n.l(item.published_at.localtime, :format => "%e %B %Y").lstrip + ")"
             %p
-              %em= item.intention
+              %em&= item.intention
 
       .pagination
         = will_paginate(@published_ideas, :container => false)

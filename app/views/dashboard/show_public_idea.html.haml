@@ -1,19 +1,19 @@
 = link_to t(".back"), :back
 
 .app-block
-  %h1= @idea.title
+  %h1&= @idea.title
 
   %p
     = t(".author") + ":"
-    %strong= "#{@idea.user.last_name} #{@idea.user.first_name}"
+    %strong&= "#{@idea.user.last_name} #{@idea.user.first_name}"
     %br
     = t("activerecord.attributes.idea.state") + ":"
-    %strong= @idea.state.title
+    %strong&= @idea.state.title
 
-  %p.idea-intention= @idea.intention
+  %p.idea-intention&= @idea.intention
 
   - if @idea.description.present?
-    .idea-description.rich-description= @idea.description
+    .idea-description.rich-description&= @idea.description
 
   -if @features.present?
     = render :partial => "shared/feature_list", :locals => { :show_menu => false }

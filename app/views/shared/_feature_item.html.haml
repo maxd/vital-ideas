@@ -2,11 +2,10 @@
   %div.feature-indicator(style="background-color: #{ priority_to_color(item.weight) }" title="Weight: #{item.weight}")
   %div.feature
     .feature-title.clearfix
-      %h5.collapsed= item.title
+      %h5.collapsed&= item.title
       - if show_menu
         .feature-menu
           = link_to t(".edit_feature"), edit_idea_feature_path(@idea, item)
-          = link_to t(".delete_feature"), idea_feature_path(@idea, item), :method => :delete, :confirm => t(".confirm_for_delete", :title => item.title)
+          = link_to t(".delete_feature"), idea_feature_path(@idea, item), :method => :delete, :confirm => t(".confirm_for_delete", :title => h(item.title))
     - if item.description.present?
-      .feature-description.rich-description
-        = item.description
+      .feature-description.rich-description&= item.description

@@ -22,7 +22,7 @@ module IdeasHelper
 
   def icon_title_cell(item)
     parts = []
-    parts << link_to(item.title, idea_path(item), :title => item.title)
+    parts << link_to(h(item.title), idea_path(item), :title => h(item.title))
     parts << image_tag("pin.png", :title => t(".sticked")) if item.sticky
     parts.join("\n")
   end
@@ -35,7 +35,7 @@ module IdeasHelper
     parts << link_to(image_tag("edit.png"), edit_url, :title => t(".edit_hint"))
     parts << link_to(image_tag("delete.png"), delete_url, :method => "delete",
                      :title => t(".delete_hint"),
-                     :confirm => t(".confirm_for_delete", :title => item.title))
+                     :confirm => t(".confirm_for_delete", :title => h(item.title)))
 
     parts.join("\n")
   end

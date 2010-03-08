@@ -24,7 +24,7 @@ module Settings::TagsHelper
     parts << "&nbsp;"
     parts << link_to(image_tag("delete.png"), delete_url, :method => "delete",
                      :title => t(".delete_hint"),
-                     :confirm => t(".confirm_for_delete", :name => item.name))
+                     :confirm => t(".confirm_for_delete", :name => h(item.name)))
 
     parts.join("\n")
   end

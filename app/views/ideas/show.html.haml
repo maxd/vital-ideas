@@ -1,15 +1,15 @@
 .header-and-tags-line
-  %h1= @idea.title
+  %h1&= @idea.title
   = render_tags @idea.tags, true
 
 %p
   = t("activerecord.attributes.idea.state") + ":"
-  %strong= @idea.state.title
+  %strong&= @idea.state.title
 
-%p.idea-intention= @idea.intention
+%p.idea-intention&= @idea.intention
 
 - if @idea.description.present?
-  .idea-description.rich-description= @idea.description
+  .idea-description.rich-description&= @idea.description
 
 -if @features.present?
   = render :partial => "shared/feature_list", :locals => { :show_menu => true }
