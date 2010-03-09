@@ -62,15 +62,19 @@ class IdeasController < ApplicationController
   end
 
   def publish
-    @idea.change_publication_status(params[:publish])    
-    @idea.save
+    @idea.change_publication_status(params[:publish])
+    @idea.skip_timestamp do
+      @idea.save
+    end
 
     render :partial => "publish_menu_item", :layout => false
   end
 
   def sticky
     @idea.sticky = params[:sticky]
-    @idea.save
+    @idea.skip_timestamp do
+      @idea.save
+    end
 
     render :partial => "sticky_menu_item", :layout => false
   end
