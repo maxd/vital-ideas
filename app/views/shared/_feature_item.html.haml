@@ -8,4 +8,4 @@
           = link_to t(".edit_feature"), edit_idea_feature_path(@idea, item)
           = link_to t(".delete_feature"), idea_feature_path(@idea, item), :method => :delete, :confirm => t(".confirm_for_delete", :title => h(item.title))
     - if item.description.present?
-      .feature-description.rich-description&= item.description
+      .feature-description.rich-description= Sanitize.clean(item.description, Sanitize::Config::CURRENT)

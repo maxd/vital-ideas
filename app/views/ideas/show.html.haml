@@ -9,7 +9,7 @@
 %p.idea-intention&= @idea.intention
 
 - if @idea.description.present?
-  .idea-description.rich-description&= @idea.description
+  .idea-description.rich-description= Sanitize.clean(@idea.description, Sanitize::Config::CURRENT)
 
 -if @features.present?
   = render :partial => "shared/feature_list", :locals => { :show_menu => true }
