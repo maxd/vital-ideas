@@ -3,12 +3,14 @@ Introduction
 
 The "Vital Ideas" is application for store, growing and analyzing your ideas!
 
-For more details see [Wiki pages](http://wiki.github.com/maxd/ext-rails-template/)
+Version 0.0.1
 
-Status
-------
+For more details see [Wiki pages](http://wiki.github.com/maxd/vital-ideas/)
 
-Early Alpha
+Installation
+------------
+
+See [Installation](http://wiki.github.com/maxd/vital-ideas/installation) section
 
 Screenshots
 -----------
