@@ -147,6 +147,6 @@ Feature: Registration in application feature enabled
     Given I am anonymous user
     When I go to the registration page
     And follow "Cancel"
-    Then I should be on the dashboard page
+    Then I should be on the welcome page
 
     

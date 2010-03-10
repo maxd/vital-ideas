@@ -6,7 +6,7 @@ Feature: Anonymous user should have access to dashboard, register, reset passwor
   Scenario: Anonymous user should have access to dashboard page
     Given I am anonymous user
     When I go to the dashboard page
-    Then I should be on the dashboard page
+    Then I should be on the welcome page
 
   Scenario: Anonymous user should have access to login page
     Given I am anonymous user

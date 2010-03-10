@@ -12,6 +12,10 @@ module NavigationHelpers
       dashboard_path
     when /the dashboard page/
       dashboard_path
+    when /the welcome page/
+      welcome_path
+    when /the user dashboard page/
+      user_dashboard_path
     when /the login page/
       login_path
     when /the logout page/

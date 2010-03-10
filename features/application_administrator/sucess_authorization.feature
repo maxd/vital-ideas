@@ -6,7 +6,7 @@ Feature: Application administrator should have access to all pages
   Scenario: Application administrator should have access to dashboard page
     Given I am application administrator
     When I go to the dashboard page
-    Then I should be on the dashboard page
+    Then I should be on the user dashboard page
 
   Scenario: Application administrator should have access to profile page
     Given I am application administrator

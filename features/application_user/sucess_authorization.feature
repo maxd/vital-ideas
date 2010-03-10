@@ -6,7 +6,7 @@ Feature: Application user should have access to dashboard, profile and profile e
   Scenario: Application user should have access to dashboard page
     Given I am application user
     When I go to the dashboard page
-    Then I should be on the dashboard page
+    Then I should be on the user dashboard page
 
   Scenario: Application user should have access to profile page
     Given I am application user
