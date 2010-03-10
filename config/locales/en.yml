@@ -191,6 +191,7 @@ en:
           How often ideas come to your mind? Can you remember it after week? What ideas you develop now?
           How clearly you describe own ideas? Do you review ideas that you done before?
         </p>
+      register_text: |+
         <p>
           <a href="/register">Register</a> and try to systematize your ideas just now.
         </p>

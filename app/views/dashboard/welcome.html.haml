@@ -1,6 +1,8 @@
 .welcome-container
   .welcome-block
     = t(".welcome_text")
+    - if ENABLE_USER_REGISTRATION
+      = t(".register_text")
 
   .public-ideas-block
     .app-block
