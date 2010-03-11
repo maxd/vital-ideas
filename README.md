@@ -15,12 +15,12 @@ See [Installation](http://wiki.github.com/maxd/vital-ideas/installation) section
 Screenshots
 -----------
 
-<a href="http://picasaweb.google.ru/lh/photo/NESDZ4nckQ3zkj618n83bw?feat=embedwebsite" target="_blank"><img src="http://lh4.ggpht.com/_t-RB-yPT4-A/S5bShsb7cxI/AAAAAAAAAzA/rbW2KMvsS7I/s288/welcome-page.jpg" /></a>
-<a href="http://picasaweb.google.ru/lh/photo/8Pk1OPTmIw5Qdg9-D-WFEQ?feat=embedwebsite" target="_blank"><img src="http://lh6.ggpht.com/_t-RB-yPT4-A/S5bSh73MsYI/AAAAAAAAAzE/yGNeF5c6_QU/s288/show-public-idea.jpg" /></a>
-<a href="http://picasaweb.google.ru/lh/photo/2VMP3AESIjEQp3BAMCZHDw?feat=embedwebsite" target="_blank"><img src="http://lh4.ggpht.com/_t-RB-yPT4-A/S5bSiCrBqSI/AAAAAAAAAzI/srogAuYAJTg/s288/user-dashboard.jpg" /></a>
-<a href="http://picasaweb.google.ru/lh/photo/jlM2v2AR6qBOlAbBpwZyMA?feat=embedwebsite" target="_blank"><img src="http://lh6.ggpht.com/_t-RB-yPT4-A/S5bSiMBjpJI/AAAAAAAAAzM/RbJ-Z-uYaKM/s288/idea-editor.jpg" /></a>
-<a href="http://picasaweb.google.ru/lh/photo/qd2VlqXkJQYh7sfCYS_EuQ?feat=embedwebsite" target="_blank"><img src="http://lh3.ggpht.com/_t-RB-yPT4-A/S5bSiWoH4EI/AAAAAAAAAzQ/SOSelq_AU1w/s288/idea-description.jpg" /></a>
-<a href="http://picasaweb.google.ru/lh/photo/-uZzGr28QE1HQYB7wOBevQ?feat=embedwebsite" target="_blank"><img src="http://lh6.ggpht.com/_t-RB-yPT4-A/S5bSombhhcI/AAAAAAAAAzY/JSiOFkbNj98/s288/feature-editor.jpg" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/4F3CEm_1H58ZNQ6hhXzuTg?feat=embedwebsite" target="_blank"><img src="http://lh4.ggpht.com/_t-RB-yPT4-A/S5lbrT09N6I/AAAAAAAAA0w/30mMBDKOvbc/s288/welcome-page.png" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/_bZnIq_F6O1x2KEX0E1lzg?feat=embedwebsite" target="_blank"><img src="http://lh6.ggpht.com/_t-RB-yPT4-A/S5lbr9dph5I/AAAAAAAAA00/sbBoshfgpHo/s288/public-idea-description.png" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/iq4yqtAFbtPE0GZJED9w_A?feat=embedwebsite" target="_blank"><img src="http://lh6.ggpht.com/_t-RB-yPT4-A/S5lbr7TxmqI/AAAAAAAAA04/rLyWl_OR5z4/s288/user-dashboard.png" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/keetnK1KHj2-McbcM3YZ9g?feat=embedwebsite" target="_blank"><img src="http://lh3.ggpht.com/_t-RB-yPT4-A/S5lbsceEJmI/AAAAAAAAA08/Fg0yHK_0rmM/s288/idea-description.png" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/TFt6FwMQ3VVVN46aZbHXvQ?feat=embedwebsite" target="_blank"><img src="http://lh5.ggpht.com/_t-RB-yPT4-A/S5lcEjo51iI/AAAAAAAAA1M/F5mE89dbC-A/s288/idea-editor.png" /></a>
+<a href="http://picasaweb.google.ru/lh/photo/xA5TH-sVcBCCZ3EdAX4sVA?feat=embedwebsite" target="_blank"><img src="http://lh4.ggpht.com/_t-RB-yPT4-A/S5lbwOkWfFI/AAAAAAAAA1E/TmMHr3sNLqo/s288/feature-editor.png" /></a>
 
 Additional Information
 ----------------------
