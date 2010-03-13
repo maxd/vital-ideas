@@ -11,6 +11,7 @@ Given /^I am application user$/ do
       | Login                 | user            |
       | Password              | user            |
     And press "Login"
+    Then I should authenticated in application
   }
 end
 
@@ -22,6 +23,7 @@ Given /^I am application administrator$/ do
       | Login                 | admin           |
       | Password              | admin           |
     And press "Login"
+    Then I should authenticated in application
   }
 end
 
