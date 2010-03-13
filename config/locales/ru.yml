@@ -243,6 +243,9 @@ ru:
     edit:
       title: "Изменить идею"
 
+    form:
+      tag_list_hint: "Нажмите <strong>Ctrl+Space</strong> чтобы открыть окно автокомплита"
+
     tag:
       title: "Идеи с тэгом '{{tag}}'"
       actions: ""

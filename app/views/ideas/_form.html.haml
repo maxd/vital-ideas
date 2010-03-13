@@ -4,7 +4,7 @@
     = form.input :intention, :input_html => { :rows => 4 }
     = form.input :description, :input_html => { :class => "mceEditor" }
     = form.input :state, :as => :select, :include_blank => false
-    = form.input :tag_list
+    = form.input :tag_list, :hint => t(".tag_list_hint")
   - form.buttons :class => "buttons" do
     = form.commit_button
     %li.cancel
@@ -13,9 +13,15 @@
 
 :javascript
   jQuery(function(){
-    $('#idea_tag_list').autocomplete({
+    var ac = $('#idea_tag_list').autocomplete({
       minChars: 1,
       delimiter: /,\s*/,
       lookup: [ #{ @tags.collect {|tag| "'#{escape_javascript(tag)}'" }.join(", ") } ]
+    });
+
+    $('#idea_tag_list').keyup(function(event) {
+      if(event.keyCode == 32 && event.ctrlKey && !event.altKey && !event.shiftKey) {
+        ac.getSuggestions("");
+      }
     });
   });

@@ -243,6 +243,9 @@ en:
     edit:
       title: "Change Idea"
 
+    form:
+      tag_list_hint: "Press <strong>Ctrl+Space</strong> to open the autocomplete window manually"
+
     tag:
       title: "Ideas with tag '{{tag}}'"
       actions: ""
