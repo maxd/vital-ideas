@@ -4,7 +4,7 @@
 # This script send weekly reports to subscribed users 
 #
 # Example of crontab configuration:
-# 0 23 * * 7 <path to vital ideas root dir>/bin/weekly_report_notification.rb
+# 0 23 * * 7 RAILS_ENV=production <path to vital ideas root dir>/bin/weekly_report_notification.rb
 
 require File.expand_path('../../config/environment', __FILE__)
 
