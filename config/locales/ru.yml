@@ -8,6 +8,18 @@ ru:
   "true": "Да"
   "false": "Нет"
   record_not_found: "Запрощенный объект не найден."
+  weekly_report: "Еженедельный отчёт"
+  email_greeting: |+
+    Добрый день, {{user_name}}
+    <p>
+      Это еженедельный отчёт от сервиса Vital Ideas. Вы можете отписаться от него в собственном
+      <a href="{{profile_path}}">профайле</a>.
+    </p>
+  email_signature: |+
+    С уважением,<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp; Разработчики Vital Ideas
+  ideas_on_this_week: "Идеи добавленные на этой неделе"
+  no_ideas_on_this_week: "Нет идей добавленных на этой неделе."
 
   layouts:
     main_navigation:
@@ -112,6 +124,7 @@ ru:
         last_name: "Фамилия"
         password: "Пароль"
         password_confirmation: "Повторить пароль"
+        send_weekly_report: "Отправлять еженедельный отчёт на e-mail"
         created_at: "Создан"
         last_login_at: "Последний логин"
         last_login_ip: "IP последнего логина"

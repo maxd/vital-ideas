@@ -8,7 +8,8 @@ db/schema.rb
 public/javascripts/tiny_mce
 public/stylesheets/application.css
 config/database.yml
+config/initializers/email_notification.rb
+config/initializers/global_settings.rb
 rerun.txt
-bin
 config/deploy.rb
 Capfile

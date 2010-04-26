@@ -11,6 +11,7 @@
       = form.input :last_name
       = form.input :password, :input_html => { :autocomplete => "off" }
       = form.input :password_confirmation, :input_html => { :autocomplete => "off" }
+      = form.input :send_weekly_report, :label_html => { :style => "width: 300px; margin-left: 170px; text-align:left" }
     - form.buttons do
       = form.commit_button t(".change")
       %li.cancel

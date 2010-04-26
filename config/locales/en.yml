@@ -8,6 +8,18 @@ en:
   "true": "Yes"
   "false": "No"
   record_not_found: "Requested entity not found."
+  weekly_report: "Weekly Report"
+  email_greeting: |+
+    Hello, {{user_name}}
+    <p>
+      This is weekly report from Vital Ideas service. If you want to disable delivery of weekly report you can do it in own
+      <a href="{{profile_path}}">profile</a>.
+    </p>
+  email_signature: |+
+    Thanks,<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp; Vital Ideas Team
+  ideas_on_this_week: "Ideas added on this week"
+  no_ideas_on_this_week: "No ideas added on this week."
 
   layouts:
     main_navigation:
@@ -112,6 +124,7 @@ en:
         last_name: "Last Name"
         password: "Password"
         password_confirmation: "Password confirmation"
+        send_weekly_report: "Send weekly report to  e-mail"
         created_at: "Created At"
         last_login_at: "Last Login At"
         last_login_ip: "Last Login IP"
