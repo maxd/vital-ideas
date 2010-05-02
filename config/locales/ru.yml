@@ -229,7 +229,6 @@ ru:
       new_idea: "Новая идея..."
       edit_idea: "Изменить идею..."
       delete_idea: "Удалить идею..."
-      new_feature: "Новая фича..."
 
     publish_menu_item:
       publish_idea: "Опубликовать идею"
@@ -292,6 +291,8 @@ ru:
       title: "Фичи"
       collapse_all: "Сверуть все"
       expand_all: "Развернуть все"
+      no_features: "Нет фичь."
+      new_feature: "Новая фича..."
 
     feature_item:
       edit_feature: "Изменить"

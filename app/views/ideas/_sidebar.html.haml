@@ -7,8 +7,6 @@
     %h6= t("sidebar.idea_actions")
     .app-sidebar-navigation
       %ul
-        %li
-          = link_to t(".new_feature"), new_idea_feature_path(@idea)
         %li#publish-menu-item
           = render :partial => "publish_menu_item"
         %li#sticky-menu-item

@@ -3,7 +3,13 @@
     = link_to t(".expand_all"), "#", :class => "expand-collaps-all-features"
   %h2= t(".title")
 
-= render :partial => "shared/feature_item", :collection => @features, :as => :item, :locals => { :show_menu => show_menu }
+- if @features.present?
+  = render :partial => "shared/feature_item", :collection => @features, :as => :item, :locals => { :show_menu => show_menu }
+- else
+  %p= t(".no_features")
+
+- if show_menu
+  %p= link_to t(".new_feature"), new_idea_feature_path(@idea)
 
 :javascript
   jQuery(function() {

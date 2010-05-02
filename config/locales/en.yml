@@ -229,7 +229,6 @@ en:
       new_idea: "New Idea..."
       edit_idea: "Edit Idea..."
       delete_idea: "Delete Idea..."
-      new_feature: "New Feature..."
 
     publish_menu_item:
       publish_idea: "Publish Idea"
@@ -292,6 +291,8 @@ en:
       title: "Features"
       collapse_all: "Collapse All"
       expand_all: "Expand All"
+      no_features: "No features."
+      new_feature: "New Feature..."
 
     feature_item:
       edit_feature: "Change"
